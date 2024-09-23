@@ -1,0 +1,244 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+html {
+    font-family: Tahoma, sans-serif;
+    background: #90ccfbff url("../assets/mesh.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url("../assets/cloud1.png"), url("../assets/cloud2.png"), url("../assets/cloud3.png");
+}
+
+body {
+	background: url("../assets/sun.png") 95% 0;
+	background-attachment: fixed;
+	background-size: 15%;
+	background-repeat: no-repeat;
+	color: #375296ff;
+}
+
+.page-wrapper {
+	margin: 0 18vw;
+	display: grid;
+	grid-template-columns: auto 80% 30%;
+	justify-content: center;
+}
+
+
+header {
+	text-align: center;
+	justify-content: center;
+	background-image: 
+		url("../assets/cloud1.png"), 
+		url("../assets/cloud2.png"), 
+		url("../assets/cloud3.png");
+	background-size: contain;
+	background-repeat: space;
+	margin-top: 10vh;
+	margin-bottom: -5vh;
+	padding: 8vh;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 450%;
+	animation: glow 1.5s ease-in-out infinite alternate;
+	margin: -5px;
+}
+
+@keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ccffff, 0 0 40px #ccffff, 0 0 50px #ccffff, 0 0 60px #ccffff, 0 0 70px #ccffff;
+	}
+	
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #ffffcc, 0 0 40px #ffffcc, 0 0 50px #ffffcc, 0 0 60px #ffffcc, 0 0 70px #ffffcc, 0 0 80px #ffffcc;
+	}
+}
+
+h2 {
+	font-weight: lighter;
+	font-size: 160%;
+	font-style: italic;
+	letter-spacing: 5px;
+}
+
+
+.summary {
+	justify-content: center;
+	text-align: justify;
+	border: 5px solid;
+	border-radius: 13px;
+	animation: glow2 1.5s ease-in-out infinite alternate;
+	background-color: rgb(225, 255, 255, 0.7);
+	line-height: 2;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 120%;
+	padding: 0 3%;
+}
+
+.summary p:nth-child(2) {
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 8px;
+	font-weight: bolder;
+  }
+
+.summary a {
+	text-transform: uppercase;
+	color: #1095ee;
+	text-decoration: none;
+}
+
+.summary a:hover {
+	color: #9700bd;
+}
+
+
+@keyframes glow2 {
+	from {
+	  border-color: #fff;
+	  box-shadow: 0 0 10px #fff;
+	}
+	
+	to {
+	  border-color: #ffffcc;
+	  box-shadow: 0 0 10px #ffffcc;
+	}
+}
+
+.sidebar {
+	border: 5px solid;
+	border-radius: 13px;
+	animation: glow2 1.5s ease-in-out infinite alternate;
+	background-color: rgb(225, 255, 255, 0.7);
+	padding: 5%;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 120%; 
+	height: min-content;
+	margin-top: 10vh;
+}
+
+.sidebar h3 {
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 8px;
+	font-weight: bolder;
+  }
+
+.sidebar a {
+	color: #1095ee;
+	text-decoration: none;
+}
+
+.sidebar a:hover {
+	color: #9700bd;
+}
+
+a:visited {
+	color: #007488;
+}
+
+.preamble {
+    padding: 80px;
+    color: rgb(255, 255, 255);
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background-color: #375296ff;
+	border-radius: 13px;
+	letter-spacing: 2px;
+	line-height: 2;
+	animation: glow4 1.5s ease-in-out infinite alternate;
+}
+
+.preamble h3 {
+	text-transform: uppercase;
+}
+
+.preamble p {
+	font-style: oblique;
+}
+
+.supporting {
+	margin: 10%
+}
+
+.supporting h3 {
+	font-size: 250%;
+	font-family: monospace;
+	font-weight: bold;
+	color: #375296ff;
+	letter-spacing: 2px;
+	justify-content: center;
+	animation: glow4 1.5s ease-in-out infinite alternate;
+}
+
+.supporting p {
+	line-height: 2;
+	letter-spacing: 2px;
+}
+
+.supporting a {
+	color: #1095ee;
+	text-decoration: none;
+}
+
+.supporting a:hover {
+	color: #9700bd;
+}
+
+@keyframes glow4 {
+	from {
+	  text-shadow: 0 0 6px #fff;
+	}
+	to {
+	  text-shadow: 0 0 30px #f7de00;
+	}
+}
+
+footer {
+	animation: glow4 1.5s ease-in-out infinite alternate;
+	text-align: center;
+	font-style: bold;
+	padding: 1vh;
+	text-align: center;
+	justify-content: center;
+	background-image: 
+		url("../assets/cloud1.png"), 
+		url("../assets/cloud2.png"), 
+		url("../assets/cloud3.png");
+	background-size: contain;
+	background-repeat: space;
+}
+
+
+
+footer a {
+	color: #375296ff;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: monospace;
+	letter-spacing: 2px;
+	font-size: 120%;
+	padding: 5vh;
+	line-height: 2;
+}
+
+footer a:hover {
+	color: #90ccfbff ;
+	text-decoration: none;
+}
+
+
